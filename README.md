@@ -8,11 +8,15 @@ skills, experience, education, and contact messages.
 
 
 Tech Stack
-
 Python
+
 Django
+
 Django REST Framework
+
 PostgreSQL
+
 Celery
+
 Swagger
 
