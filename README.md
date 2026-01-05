@@ -1,4 +1,4 @@
-Hi, my name is Linda Musyoki, a junior Backend Developer with a strong foundation in Python, Django, RESTful API development,
+Hi, my name is Linda Musyoki, a junior Backend Developer with a strong foundation in Python, Django, and RESTful API development,
 transitioning from accounting into software development. 
 This project is a personal portfolio  built with Django, REST Framework, PostgreSQL, and Celery.
 It showcases my backend engineering skills through real-world data modeling, clean API design, asynchronous processing, 
