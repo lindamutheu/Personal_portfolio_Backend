@@ -8,6 +8,7 @@ skills, experience, education, and contact messages.
 
 
 Tech Stack
+
 Python
 
 Django
