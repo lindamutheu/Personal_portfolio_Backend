@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-0!s_234!f-d6khlbx+3&3ll8!hl89wyzvot%xq&=#%jss(059#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1'
+]
 
 
 # Application definition
@@ -37,6 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'Backend',
+    'rest_framework',
+    'corsheaders',
+    'django_celery_results',
 ]
 
 MIDDLEWARE = [
@@ -75,8 +82,13 @@ WSGI_APPLICATION = 'personal_portfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'portfolio_db',
+        'USER': 'postgres',
+        'PASSWORD': '1l0v3J3su5Chr1st!',
+        'HOST': 'localhost',
+        'PORT': '5432',
+         
     }
 }
 
