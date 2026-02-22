@@ -1,0 +1,508 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    align-items: right;
+    justify-content: center;
+    background: black;
+    top: 0;left: 0;right: 0;
+  
+} 
+header .logo span{
+    color: royalblue;
+}
+header nav a{
+    list-style: none;
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 30px 30px;
+}
+
+ nav a:hover,
+ nav a .active
+ {
+    background: royalblue;
+}
+
+@media (max-width:600px){
+    header nav a{
+        list-style: none;
+        color: white;
+        font-size: 30px;
+        display: block;
+        text-decoration: none;
+        padding: 10px 10px;
+     text-align: center;
+    }
+}
+
+
+@media (max-width:800px){
+    header nav a{
+        list-style: none;
+        color: white;
+        font-size: 30px;
+        display: block;
+        text-decoration: none;
+        padding: 10px 10px;
+     text-align: center;
+    }
+}
+
+.home h3{
+    font-size: 2rem;
+    color: #fff;
+    }
+    .home h1{
+        font-size: 2.5rem;
+        color: #fff;
+    }
+    .home h1 span{
+        color: royalblue;
+    }
+    .home p{
+        font-size: 1rem;
+        color: #fff;
+        padding: 10px;
+        animation-delay: 0.5s;
+    }
+    .btn{
+        padding: .5rem 2rem;
+        background: royalblue;
+        cursor: pointer;
+        color: #fff;
+        margin-top: 1rem;
+        font-size: 1rem;
+        border-radius: 5rem;
+        animation-delay: 1s;
+    }
+    .btn:hover{
+        background: black;
+    }
+
+.home{
+        display: flex;
+        padding: 50px;
+        margin: 0px;
+        background: black;
+    }
+.home img{
+    width: 400px;
+    height: 500px;
+    animation-delay: 1s;
+}
+
+@media (max-width:600px) {
+    .home{
+        display: block;
+        padding: 50px;
+        margin: 0px;
+        background: black;
+    }
+}
+
+
+@media (max-width:600px) {
+    .home .pic anim{
+        display: block;
+        align-items: center;
+    }
+}
+
+
+@media (max-width:800px) {
+    .home{
+        display: block;
+        padding: 50px;
+        margin: 0px;
+        background: black;
+    }
+}
+
+
+@media (max-width:800px) {
+    .home .pic anim{
+        display: block;
+        align-items: center;
+    }
+}
+
+
+
+
+
+.content{
+    padding-top: 70px;
+    padding-left: 30px;
+}
+.icons img{
+    height: 35px;
+    width: 35px;
+    background: rebeccapurple;
+    padding: 7px;
+    border-radius: 20px;
+    animation-delay: 0.5s;
+    cursor: pointer;
+    transition: 0.5;
+}
+.icons img:hover{
+    background: royalblue;
+    transition: 0.5;
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.feature anim{
+    animation-delay: 1.5s;
+}
+.pic anim{
+    animation-delay: 0.3s;
+}
+
+
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    background: black;
+}
+.heading{
+text-align: center;
+
+}
+.heading span{
+    color:royalblue;
+    font-size: 35px;
+}
+
+
+
+.about .heading h1{
+    color: #fff;
+}
+
+
+.about .row .info{
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+.about .row .info h3{
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+.about .row .info h3 span{
+    color: rebeccapurple;
+    padding: 0 .5rem;
+}
+.about .row .counter{
+    flex: 2 248rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about .row .counter .box{
+    width: 24rem;
+    background: royalblue;
+    text-align: center;
+    padding: 18px;
+    margin-right: 750px;  
+}
+
+
+.about .row .counter .bo{
+    width: 24rem;
+    background: royalblue;
+    text-align: center;
+    padding: 10px;
+    margin-left: 750px;  
+    color: #fff;
+    font-size: 20px;
+}
+
+.about .row .counter .b{
+    width: 24rem;
+    background: royalblue;
+    text-align: center;
+    padding: 20px;
+    margin-right: 750px;  
+    color: #fff;
+    font-size: 20px;
+}
+
+.btnn{
+    padding: .5rem 2rem;
+    background: rgb(174, 65, 225);
+    cursor: pointer;
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 5rem;
+    animation-delay: 1s;
+}
+.btnn:hover{
+    background: black;
+}
+
+
+
+.about .row .counter .box h3{
+    font-size: 3.0rem;
+}
+.about .row .counter .box span{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.box li{
+    color: #fff;
+    font-size: 22px;
+}
+
+
+.hire-button {
+            position: relative;
+            padding: 15px 30px;
+            margin: 20px 1px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(90deg, #4a90e2, #9b59b6);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+        .hire-button:hover {
+            transform: scale(1.1);
+        }
+        .hire-button:active {
+            transform: scale(0.9);
+        }
+        .shimmer {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: skewX(-30deg);
+            animation: shimmer 2s infinite linear;
+        }
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.services{
+
+    background: black;
+    align-items: center;
+    text-align: center;
+}
+.services h1{
+    margin-top: 5%;
+    font-size: 40px;
+    color: rebeccapurple;
+    text-align: center;
+}
+.container{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+.box h3{
+    color: #fff;
+    font-size: 30px;
+}
+.box p{
+    color: #fff;
+    font-size: 20px;
+}
+
+.container .box{
+    padding: 5px;
+   box-sizing: border-box;
+  align-items: center;
+  margin: 40px;
+}
+.container img{
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    
+}
+
+#more{
+    display: none;
+}
+
+
+@media (max-width:600px) {
+    .container{
+        display: block;
+        align-items: center;
+    }
+}
+
+
+
+
+@media (max-width:800px) {
+    .container{
+        display: block;
+        align-items: center;
+    }
+}
+
+
+@media (max-width:1200px) {
+    .container{
+        display: block;
+        align-items: center;
+    }
+}
+
+
+
+
+.portfolio .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1 1 25rem;
+    padding: 2rem 0;
+    transition: all 0.3s;
+}
+.heading h1{
+  margin-top: 30px;
+    font-size: 45px;
+}
+.portfolio img{
+    height: 350px;
+    width: 300px;
+    transition: all 0.3s;
+}
+.portfolio img:hover{
+transform: scale(1.15);
+}
+.portfolio .box-container .box{
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    background: black;
+}
+
+
+
+
+
+.contact{
+    text-align: centre;
+    padding: 10px;  
+  
+}
+
+.contact h1{
+    color: indigo;
+    padding-top: 20px;
+    font-size: 50px;
+}
+ 
+.contact .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 3%;
+    padding-bottom: 5px;
+    height: 250px;
+}
+
+.contact .container .icons{
+    flex: 1 1 15rem;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    text-align: centre;
+}
+
+.contact .container .icons img{
+    height: 50px;
+    width: 50px;
+}
+
+
+
+.footer .footer-container{
+    background: black;
+    border: 5px solid rgba(0, 0, 0, .2);
+    width: 100%;
+    height: 300px;
+}
+
+.footer-container .bx-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+ .footer-container .bx-container .box{
+    flex: 1 1 15rem;
+   
+}
+.footer-container .bx-container .box h3{
+    color: white;
+  
+}
+.footer-container .bx-container .box a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+.credit{
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+}

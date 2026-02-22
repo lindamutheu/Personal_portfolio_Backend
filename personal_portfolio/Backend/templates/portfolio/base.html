@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Linda Mutheu{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'css/portfolioTwo.css' %}">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#Home" class="logo"><span>mutheu</span>LINDA</a>
+        <a href="#Home" class="active">About</a>
+        <a href="#Portfolio">Projects</a>
+        <a href="#Contact">Contact</a>
+
+        <button class="hire-button" onclick="fireConfetti()">Contact Me</button>
+    </nav>
+</header>
+
+{% block content %}{% endblock %}
+
+<script src="{% static 'js/portfolioTwo.js' %}" defer></script>
+</body>
+</html>

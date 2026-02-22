@@ -1,4 +1,7 @@
 from django.urls import path
+from .views import home
+
+
 from .views import (
     ProfileView,
     ProjectListView,
@@ -13,5 +16,8 @@ urlpatterns = [
     path('experience/', ExperienceListView.as_view()),
     path('education/', EducationListView.as_view()),
     path('contact/', ContactMessageCreateView.as_view()),
+    path('', home, name='home'),
+
 ]
-    
+
+

@@ -14,6 +14,7 @@ class Profile(models.Model):
     def __str__(self):
         return self.full_name
 
+
 class Project(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
@@ -25,6 +26,7 @@ class Project(models.Model):
 
     def __str__(self):
         return self.title
+    
     
 class Experience(models.Model):
     job_title = models.CharField(max_length=100)

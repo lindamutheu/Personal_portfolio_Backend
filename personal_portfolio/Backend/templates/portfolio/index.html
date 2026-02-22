@@ -1,0 +1,110 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title %}Home | Linda Mutheu{% endblock %}
+
+{% block content %}
+
+<section id="Home">
+    <div class="home">
+        <img src="{% static 'images/Lin.jpg' %}" class="pic anim">
+
+        <div class="content">
+            <h1 class="anim">My Name is Linda Mutheu</h1>
+            <h1 class="anim">Junior <span>Backend Developer</span></h1>
+
+            <p class="anim">
+                I am a Backend Developer with one year experience <br>
+                specializing in Python and Django. My technical
+                skills include building RESTful APIs, <br>
+                working with PostgreSQL databases, and implementing background <br>
+                task processing using Celery.
+            </p>
+
+            <p>
+
+            I am currently transitioning from accounting to software development, <br>
+            and I am excited to apply my analytical and problem-solving skills in this new field. <br>
+            I am passionate about creating efficient and scalable backend solutions, <br>
+            and I am always eager to learn new technologies and improve my skills.<br>
+            I am a team player and enjoy collaborating with others to achieve common goals.<br>
+        My goal is to contribute to the development of innovative and impactful software <br>
+        solutions that make a difference in people's lives.      
+       </p>
+
+            <div class="icons">
+                <a href="https://github.com/lindamutheu" target="_blank">
+                    <img src="{% static 'images/icons8-github-50.png' %}">
+                </a>
+                <a href="https://linkedin.com/in/linda-musyoki-507436261" target="_blank">
+                    <img src="{% static 'images/icons8-linkedin-48.png' %}">
+                </a>
+            </div>
+
+            <a href="{% static 'docs/Linda_Musyoki_Cv.pdf' %}" download>
+                <button class="btnn">DOWNLOAD CV</button>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="portfolio" id="Portfolio">
+    <h1 class="heading">Recent <span>Projects</span></h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="{% static 'images/landingpage.png' %}">
+        </div>
+
+        <div class="box">
+            <img src="{% static 'images/admin.png' %}">
+        </div>
+
+        <div class="box">
+            <img src="{% static 'images/sampleapi.png' %}">
+        </div>
+    </div>
+
+<div class="box-container">
+    <div class="box">
+        <img src="{% static 'images/port8.png' %}">
+    </div>
+
+    <div class="box">
+        <img src="{% static 'images/port11.png' %}">
+    </div>
+
+    <div class="box">
+        <img src="{% static 'images/port9.png' %}">
+    </div>
+
+</div>
+
+
+</section>
+
+<section class="contact" id="Contact">
+    <h1 class="heading">Contact Me</h1>
+
+    <div class="container">
+        <div class="icons">
+            <img src="{% static 'images/icons8-phone-48.png' %}">
+            <h3>Phone</h3>
+            <p>+254 726 541 303</p>
+        </div>
+
+        <div class="icons">
+            <img src="{% static 'images/icons8-email-48.png' %}">
+            <h3>Email</h3>
+            <p>lindamutheu5@gmail.com</p>
+        </div>
+
+        <div class="icons">
+            <img src="{% static 'images/location-2955.png' %}">
+            <h3>Location</h3>
+            <p>Nairobi, Kenya</p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

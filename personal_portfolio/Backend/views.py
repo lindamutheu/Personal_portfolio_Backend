@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from rest_framework import generics
+from django.http import HttpResponse
+from django.template import loader
+
 from .models import Profile, Project, Experience, Education, ContactMessage
 from .serializers import (
     ProfileSerializer,
@@ -37,5 +40,6 @@ class ContactMessageCreateView(generics.CreateAPIView):
 
 
 
-
+def home(request):
+    return render(request, 'portfolio/index.html')
 
