@@ -41,5 +41,8 @@ class ContactMessageCreateView(generics.CreateAPIView):
 
 
 def home(request):
+    return HttpResponse(loader.get_template('portfolio/index.html').render({}, request))
     return render(request, 'portfolio/index.html')
+    
+    
 
