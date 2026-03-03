@@ -1,0 +1,243 @@
+/*  RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    color: white;
+}
+
+/*HEADER*/
+header {
+    background: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px 25px;
+    display: inline-block;
+}
+
+header nav a.active,
+header nav a:hover {
+    background: royalblue;
+}
+
+.logo span {
+    color: royalblue;
+}
+
+/*HOME*/
+.home {
+    display: flex;
+    gap: 40px;
+    padding: 60px;
+    background: black;
+}
+
+.home img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.content {
+    padding-top: 40px;
+}
+
+.home h1 {
+    font-size: 2.2rem;
+}
+
+.home h1 span {
+    color: royalblue;
+}
+
+.home p {
+    font-size: 1rem;
+    padding: 15px 0;
+}
+
+/*ICONS*/
+.icons img {
+    width: 35px;
+    height: 35px;
+    background: rebeccapurple;
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icons img:hover {
+    background: royalblue;
+}
+
+/*BUTTONS */
+.btnn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background: rgb(174, 65, 225);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.btnn:hover {
+    background: black;
+    border: 1px solid white;
+}
+
+/* ANIMATION */
+.anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.6s ease forwards;
+}
+
+@keyframes moveup {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*HIRE BUTTON*/
+.hire-button {
+    padding: 12px 25px;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #4a90e2, #9b59b6);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.hire-button:hover {
+    transform: scale(1.05);
+}
+
+/*PORTFOLIO */
+.portfolio {
+    padding: 60px 40px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 40px;
+}
+
+.heading span {
+    color: royalblue;
+}
+
+.portfolio .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.portfolio img {
+    width: 280px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.portfolio img:hover {
+    transform: scale(1.1);
+}
+
+/*CONTACT*/
+.contact {
+    padding: 60px 40px;
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+}
+
+.contact .container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.contact .icons {
+    border: 1px solid #444;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+/* FOOTER */
+.footer-container {
+    background: black;
+    padding: 40px;
+}
+
+.bx-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bx-container .box h3 {
+    color: white;
+}
+
+.bx-container .box a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.credit {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav a {
+        display: block;
+    }
+
+    .contact .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
