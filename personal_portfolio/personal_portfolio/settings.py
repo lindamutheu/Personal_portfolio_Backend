@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-0!s_234!f-d6khlbx+3&3ll8!hl89wyzvot%xq&=#%jss(059#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'localhost',
@@ -82,17 +82,30 @@ WSGI_APPLICATION = 'personal_portfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+  #  'default': {
+        #'ENGINE': 'django.db.backends.postgresql',
+        #'NAME': 'portfolio_db',
+        #'USER': 'postgres',
+        #'PASSWORD': '1l0v3J3su5Chr1st!',
+        #'HOST': 'localhost',
+        #'PORT': '5432',
+         
+    #}
+#}
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'portfolio_db',
-        'USER': 'postgres',
-        'PASSWORD': '1l0v3J3su5Chr1st!',
-        'HOST': 'localhost',
-        'PORT': '5432',
-         
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+
+
+
+
+
 
 
 # Password validation
