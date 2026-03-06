@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
-# exit on error
 set -o errexit
 
-# 1. Install dependencies
+# Install from the root
 pip install -r requirements.txt
 
-# 2. Collect static files
-python manage.py collectstatic --no-input
-
-# 3. Run database migrations
-python manage.py migrate
+# Run commands by pointing to the subfolder's manage.py
+python personal_portfolio/manage.py collectstatic --no-input
+python personal_portfolio/manage.py migrate
